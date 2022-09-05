@@ -29,17 +29,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // create delete button element
     const deleteBtn = document.createElement('button');
+
+    // append text node to delete button
+    deleteBtn.appendChild(document.createTextNode('X'));
+
+    // append button to li
+    li.appendChild(deleteBtn);
+
+    // Append li to list
+    taskList.appendChild(li);
+
+  }
 /*
-  // append text node to delete button
-  deleteBtn.appendChild(document.createTextNode('X'));
-
-  // append button to li
-  li.appendChild(deleteBtn);
-
-  // Append li to list
-  taskList.appendChild(li);
-
-}
 
 function removeTask(e) {
   if (e.target.nodeName === 'BUTTON') {
