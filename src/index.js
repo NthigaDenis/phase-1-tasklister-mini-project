@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Add text node with input value
     li.appendChild(document.createTextNode(newTaskDescription));
 
-/*  // create delete button element
-  const deleteBtn = document.createElement('button');
-
+    // create delete button element
+    const deleteBtn = document.createElement('button');
+/*
   // append text node to delete button
   deleteBtn.appendChild(document.createTextNode('X'));
 
