@@ -6,17 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById('create-task-form');
   const taskList = document.getElementById('tasks');
 
+
+  // Form submit event
+  form.addEventListener('submit', addTask);
+
+  // delete event
+  taskList.addEventListener('click', removeTask);
+
+  // Add task
+  function addTask(e) {
+    e.preventDefault();
 /*
-// Form submit event
-form.addEventListener('submit', addTask);
-
-// delete event
-taskList.addEventListener('click', removeTask);
-
-// Add task
-function addTask(e) {
-  e.preventDefault();
-
   // get input value
   const newTaskDescription = document.getElementById('new-task-description').value;
   console.log(newTaskDescription);
