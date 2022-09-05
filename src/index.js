@@ -40,16 +40,16 @@ document.addEventListener("DOMContentLoaded", () => {
     taskList.appendChild(li);
 
   }
-/*
 
-function removeTask(e) {
-  if (e.target.nodeName === 'BUTTON') {
-    if (confirm('Are you sure?')) {
-      let li = e.target.parentElement;
-      taskList.removeChild(li);
-    }
-  }
+  /*
+  function removeTask(e) {
+    if (e.target.nodeName === 'BUTTON') {
+      if (confirm('Are you sure?')) {
+        let li = e.target.parentElement;
+        taskList.removeChild(li);
+      }*/
+}
 
 }
 
-});*/
+});
